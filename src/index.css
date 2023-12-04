@@ -5,8 +5,8 @@
 @layer components {
 
     .sidebar {
-        @apply sticky top-32 left-5 bottom-32 w-32 m-auto flex flex-col 
-        mt-auto mx-auto rounded-md
+        @apply fixed top-32 left-5 bottom-32 w-32 m-auto flex flex-col 
+        mt-auto mx-auto rounded-md z-10
         bg-mywhite border-4 border-secondary
         dark:bg-darkPrimary dark:border-darkSecondary;
     }
@@ -14,13 +14,13 @@
     .sidebar-icon {
         @apply relative flex items-center justify-center
         h-20 w-20 mt-auto mb-auto mx-auto border-hidden border-2 border-secondary
-        text-secondary hover:border-solid 
+        text-secondary hover:border-solid z-10
         hover:rounded-lg transition-all duration-100 ease-in cursor-pointer;
     }
 
     .sidebar-tooltip {
         @apply absolute w-auto p-2 m-2 min-w-max left-14
-        rounded-md shadow-md
+        rounded-md shadow-md z-10
         text-secondary  bg-lightPurple
         transition-all duration-100 scale-0 origin-left
         font-['Consolas'] font-extralight text-sm;
@@ -34,18 +34,18 @@
     }
 
     .main-box {
-        @apply sticky bg-mywhite rounded-md shadow-md
+        @apply fixed bg-mywhite rounded-md shadow-md  
         mt-auto mb-auto mx-auto border-2 border-secondary
         font-['Consolas'] font-extralight text-sm;
     }
 
     .mygrid {
-        @apply sticky flex mt-10 mb-auto p-5 container object-top
-        w-screen mr-10;
+        @apply relative flex mt-10 mb-auto p-1 container
+        w-screen ml-44 -z-0;
     }
 
     .mybox {
-        @apply bg-mywhite border-2 border-secondary
-        font-['Consolas'] font-extralight text-sm text-center p-1; 
+        @apply relative bg-mywhite border-2 border-secondary z-0 
+        font-['Consolas'] font-extralight text-sm text-center isolate p-1; 
     }
 }
