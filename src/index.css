@@ -24,7 +24,7 @@
         rounded-md shadow-md z-10
         text-secondary  bg-lightPurple
         transition-all duration-100 scale-0 origin-left
-        font-['Consolas'] font-extralight text-sm;
+        font-['Spectral'] font-light;
     }
 
     .main-header {
@@ -35,18 +35,19 @@
     }
 
     .main-box {
-        @apply fixed bg-mywhite rounded-md shadow-md  
-        mt-auto mb-auto mx-auto border-2 border-secondary
-        font-['Consolas'] font-extralight text-sm;
+        @apply fixed bg-mywhite rounded-md shadow-md mb-10
+        mt-auto mx-auto border-2 border-secondary
+        font-['Spectral'] font-extralight text-sm;
     }
 
     .mygrid {
-        @apply relative flex mt-10 mb-auto p-1 container
-        w-screen ml-44 -z-0  divide-secondary;
+        @apply relative mt-7 p-5 container bg-mywhite
+        w-screen ml-44 -z-0 shadow-md shadow-secondary rounded-md;
     }
 
     .mybox {
-        @apply relative bg-mywhite z-0  outline outline-1
+        @apply relative bg-mywhite z-0
+         border-secondary border
         font-['Spectral'] pl-3 font-extralight text-left  p-2; 
     }
 }
