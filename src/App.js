@@ -5,6 +5,8 @@ import SeeMyWork from './components/SeeMyWork';
 import PlayTicTacToe from './components/PlayTicTacToe';
 import ReadAStory from './components/ReadAStory';
 
+require('typeface-spectral')
+
 export default function App() {   
   const [view, setView] = useState('AboutEllen')
   

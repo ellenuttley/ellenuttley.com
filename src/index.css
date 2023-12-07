@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
 
     .sidebar {
@@ -41,11 +42,11 @@
 
     .mygrid {
         @apply relative flex mt-10 mb-auto p-1 container
-        w-screen ml-44 -z-0;
+        w-screen ml-44 -z-0  divide-secondary;
     }
 
     .mybox {
-        @apply relative bg-mywhite border-2 border-secondary z-0 
-        font-['Consolas'] font-extralight text-sm text-left isolate p-2; 
+        @apply relative bg-mywhite z-0  outline outline-1
+        font-['Spectral'] pl-3 font-extralight text-left  p-2; 
     }
 }

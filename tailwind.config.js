@@ -19,6 +19,7 @@ module.exports = {
         mywhite: '#fefafa',
         lightPurple: '#F9E5FF'
       }
+      
     },
   },
   plugins: [],
