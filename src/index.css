@@ -46,6 +46,6 @@
 
     .mybox {
         @apply relative bg-mywhite border-2 border-secondary z-0 
-        font-['Consolas'] font-extralight text-sm text-center isolate p-1; 
+        font-['Consolas'] font-extralight text-sm text-left isolate p-2; 
     }
 }
