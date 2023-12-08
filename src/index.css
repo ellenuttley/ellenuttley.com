@@ -2,21 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    div {
+      @apply font-['Spectral'];
+    }
+  }
 
 @layer components {
 
     .sidebar {
-        @apply fixed top-32 left-5 bottom-32 w-32 m-auto flex flex-col 
-        mt-auto mx-auto rounded-md z-10
-        bg-mywhite border-4 border-secondary
+        @apply fixed top-24 left-7 bottom-24 w-32 pt-5 pb-5 m-auto flex flex-col gap-3
+        mt-auto mx-auto rounded-md shadow-lg shadow-secondary z-10 border-solid border-2
+        bg-mywhite border-secondary
         dark:bg-darkPrimary dark:border-darkSecondary;
     }
 
     .sidebar-icon {
-        @apply relative flex items-center justify-center
-        h-20 w-20 mt-auto mb-auto mx-auto border-hidden border-2 border-secondary
-        text-secondary hover:border-solid z-10
-        hover:rounded-lg transition-all duration-100 ease-in cursor-pointer;
+        @apply relative flex items-center justify-center z-10
+        h-20 w-20 mt-auto mb-auto mx-auto border-hidden border rounded-xl border-secondary
+        text-secondary hover:border-solid hover:shadow-darkPrimary
+        hover:rounded-lg hover:shadow-md transition-all duration-200 ease-linear cursor-pointer;
     }
 
     .sidebar-tooltip {
@@ -24,14 +29,14 @@
         rounded-md shadow-md z-10
         text-secondary  bg-lightPurple
         transition-all duration-100 scale-0 origin-left
-        font-['Spectral'] font-light;
+        font-['Spectral'];
     }
 
     .main-header {
         @apply sticky flex-auto bg-mywhite rounded-md shadow-md 
         p-3  text-center
         mt-5 mb-5 mx-5 border-4 border-secondary
-        font-['Consolas'] font-extralight text-4xl;
+        font-extralight text-4xl;
     }
 
     .main-box {
@@ -42,12 +47,39 @@
 
     .mygrid {
         @apply relative mt-7 p-5 container bg-mywhite
-        w-screen ml-44 -z-0 shadow-md shadow-secondary rounded-md;
+        w-screen ml-48 mr-7 -z-0 shadow-md shadow-secondary rounded-md;
+    }
+
+    .gridbox {
+        @apply relative bg-mywhite z-0
+         border-secondary border
+        font-['Spectral'] pl-3 font-extralight text-left p-2; 
     }
 
     .mybox {
-        @apply relative bg-mywhite z-0
-         border-secondary border
-        font-['Spectral'] pl-3 font-extralight text-left  p-2; 
+        @apply bg-mywhite rounded-md shadow-sm shadow-secondary mb-10
+        mt-auto mx-auto border border-secondary h-auto
+        font-['Spectral'] pl-3 font-extralight text-left p-2;
     }
+
+    .myswiper {
+        @apply fixed left-48 mt-2 p-5 h-full pb-44 top-5 container bg-mywhite 
+        w-screen ml-48 -z-0 shadow-md shadow-secondary rounded-md;
+    }
+    
+    .input-story-info {
+        @apply relative ml-40 flex flex-col-reverse w-full;
+      }
+    
+      .story-input {
+        @apply w-full pb-1 pt-6 px-3 text-base rounded-lg border border-gray-400 focus:border-red-400 text-gray-600 bg-white focus:outline-none focus:ring-0 appearance-none transition-colors duration-300;
+      }
+    
+      .story-input-disabled {
+        @apply bg-gray-200;
+      }
+    
+      .story-label {
+        @apply absolute top-0 items-center px-3 pt-2 text-xs peer-focus:font-semibold peer-focus:text-red-400 uppercase text-gray-600 bg-transparent transition-colors duration-300;
+      }
 }

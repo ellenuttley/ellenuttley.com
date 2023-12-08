@@ -11,8 +11,7 @@ export default function App() {
   const [view, setView] = useState('AboutEllen')
   
   return (
-    <div className="flex bg-glasses bg-blend-darken bg-fixed bg-primary h-screen scrolling-auto 
-overflow-auto">
+    <div className="flex bg-glasses bg-blend-darken bg-fixed bg-primary h-screen scrolling-auto overflow-auto">
       <SideBar setView={setView}/>
       {view === 'About Ellen' && <AboutEllen />}
       {view === 'See My Work' && <SeeMyWork />}
