@@ -12,20 +12,17 @@
 
     .sidebar {
         @apply fixed flex border-solid border-2 rounded-md shadow-lg z-10 top-1 right-1 left-1 justify-evenly w-auto pt-2 pb-2
-
-        lg:top-2/4  lg:left-7 lg:right-auto lg:bottom-auto lg:min-w-fit lg:flex-col lg:gap-5 lg:p-3 lg:mx-auto lg:pt-5 lg:pb-5
-
-        lg:transform lg:-translate-y-2/4
-
+        lg:top-2/4 lg:left-7 lg:right-auto lg:bottom-auto lg:min-w-fit lg:flex-col lg:gap-5 lg:p-3 lg:mx-auto lg:pt-5 lg:pb-5 lg:transform lg:-translate-y-2/4
         bg-mywhite border-secondary shadow-secondary dark:bg-darkPrimary dark:border-darkSecondary;
       }
       
 
     .sidebar-icon {
-        @apply relative flex items-center justify-center min-w-max z-10 p-2 h-fit w-fit
-        border-hidden border rounded-xl border-secondary text-secondary 
-        hover:border-solid hover:shadow-darkPrimary hover:rounded-lg hover:shadow-md 
-        transition-all duration-200 ease-linear cursor-pointer;
+        @apply box-border relative flex items-center justify-center min-w-max z-10 p-2 h-max w-max
+        border-mywhite border rounded-xl border-solid text-secondary 
+        hover:border-secondary hover:shadow-darkPrimary hover:rounded-lg hover:shadow-md 
+        transition-all duration-200 ease-linear cursor-pointer
+        lg:m-1;
     }
 
     .sidebar-tooltip {
@@ -38,32 +35,25 @@
         ;
     }
 
-    .main-header {
-        @apply sticky flex-auto bg-mywhite rounded-md shadow-md 
-        p-3  text-center
-        mt-5 mb-5 mx-5 border-4 border-secondary
-        font-extralight text-4xl;
-    }
-
-    .main-box {
-        @apply fixed bg-mywhite rounded-md shadow-md mb-10
-        mt-auto mx-auto border-2 border-secondary
-        font-['Spectral'] font-extralight text-sm;
-    }
-
     .mygrid {
-        @apply relative mt-7 p-5 container bg-mywhite
-        w-screen ml-48 mr-7 -z-0 shadow-md shadow-secondary rounded-md;
+        @apply grid relative container bg-mywhite
+        w-fit -z-0 shadow-md shadow-secondary rounded-md
+        mt-24 ml-1 mr-1 p-3
+        
+        lg:ml-36 lg:transform lg:-translate-y-1 lg:mt-7 lg:p-5
+        ;
     }
 
     .gridbox {
-        @apply relative bg-mywhite z-0
-         border-secondary border
-        font-['Spectral'] pl-3 font-extralight text-left p-2; 
+        @apply relative bg-mywhite z-0 border-lightGrey border border-l-0 border-r-0 
+        font-['Spectral'] text-sm font-extralight text-left p-2 m-1
+        
+        lg:text-base lg:border lg:border-solid lg:pl-3 lg:p-2 lg:border-secondary lg:m-0
+        ; 
     }
 
     .mybox {
-        @apply bg-mywhite rounded-md shadow-sm shadow-secondary mb-10
+        @apply gridbox bg-mywhite rounded-md shadow-sm shadow-secondary mb-10
         mt-auto mx-auto border border-secondary h-auto
         font-['Spectral'] pl-3 font-extralight text-left p-2;
     }

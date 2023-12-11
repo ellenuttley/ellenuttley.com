@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
+    mode: 'jit',
     content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -18,7 +18,8 @@ module.exports = {
         darkPrimary: '#350444',
         darkSecondary: '#280003',
         mywhite: '#fefafa',
-        lightPurple: '#F9E5FF'
+        lightPurple: '#F9E5FF',
+        lightGrey: '#EDECED'
       }
       
     },
