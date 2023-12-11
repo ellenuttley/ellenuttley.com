@@ -45,7 +45,7 @@
     }
 
     .gridbox {
-        @apply relative bg-mywhite z-0 border-lightGrey border border-l-0 border-r-0 
+        @apply relative bg-mywhite z-0 border-lightGrey border border-l-0 border-r-0 transform transition-all
         font-['Spectral'] text-sm font-extralight text-left p-2 m-1
         
         lg:text-base lg:border lg:border-solid lg:pl-3 lg:p-2 lg:border-secondary lg:m-0

@@ -10,10 +10,10 @@ const AboutEllen = () => (
   <div class="gridbox order-1 mb-2 pt-1 text-lg lg:text-3xl text-right border-0 font-normal">Software Engineer</div></div>
 
 {/* info */}
-  <div class="gridbox order-2 m-0.5 border-t-1 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">ellenuttley@gmail.com</div>
-  <div class="gridbox order-2 m-0.5 border-t-1 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">07815587455</div>
-  <div class="gridbox order-3 m-0.5 border-t-1 lg:order-2 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">Barnsley, UK</div>
-  <div class="gridbox order-3 m-0.5 border-t-1 lg:order-2 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-b-0">github.com/ellenuttley</div>
+  <div class="gridbox order-2 m-0.5 lg:m-0 border-t-1 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">ellenuttley@gmail.com</div>
+  <div class="gridbox order-2 m-0.5 lg:m-0 border-t-1 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">07815587455</div>
+  <div class="gridbox order-3 m-0.5 lg:m-0 border-t-1 lg:order-2 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">Barnsley, UK</div>
+  <div class="gridbox order-3 m-0.5 lg:m-0 border-t-1 lg:order-2 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-b-0">github.com/ellenuttley</div>
 
 {/* personal statement */}
   <div class="gridbox order-4 lg:order-3 col-span-8 lg:border-b-0 p-4 ">I am an enthusiastic junior software engineer, excited to get started in the real world.
