@@ -68,17 +68,22 @@
         ; 
     }
 
+    .gridbox-header {
+        @apply order-1 mb-2 pt-1 text-lg border-0 font-normal 
+        lg:text-3xl lg:p-2 lg:mb-3
+        dark:shadow-none
+    }
+
+    .gridbox-info {
+        @apply m-0.5 col-span-4 text-center text-sm font-light bg-lightPurple
+        lg:col-span-2 lg:m-0 lg:text-lg lg:border-b-0
+        dark:bg-transparent dark:shadow-sm dark:shadow-primary
+    }
+
     .gridbox-title {
-        @apply relative z-0 border-lightGrey border border-l-0 border-r-0 transform transition-all
-        text-lg font-normal text-left p-2 m-1 
-
-        bg-lightPurple
-        
-        lg:border lg:border-solid lg:pl-3 lg:p-2 lg:border-secondary lg:m-0
-        
-        dark:text-lightPurple dark:shadow-sm dark:shadow-primary dark:bg-darkPrimary dark:bg-opacity-60 dark:border-none 
-        ; 
-
+        @apply
+        text-lg font-normal bg-lightPurple
+        dark:shadow-sm dark:shadow-primary dark:bg-darkPrimary dark:bg-opacity-60;
     }
 
     .mybox {
