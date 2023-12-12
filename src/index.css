@@ -51,11 +51,11 @@
 
     .mygrid {
         @apply grid relative container bg-mywhite shadow-md shadow-secondary rounded-md 
-        mt-24 ml-1 mr-1 p-3 w-fit -z-0
+        mt-24 p-3 w-fit -z-0 mx-2
         
         lg:ml-44 lg:transform lg:-translate-y-1 lg:mt-7 lg:p-5
         
-         dark:text-lightPurple dark:border-secondary dark:bg-secondary dark:shadow-primary dark:bg-opacity-40 dark:gap-1;
+      dark:text-lightPurple dark:border-secondary dark:bg-secondary dark:shadow-primary dark:bg-opacity-40 dark:gap-1;
     }
 
     .gridbox {

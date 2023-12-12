@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SideBar from "./components/SideBar";
 import AboutEllen from "./components/AboutEllen"
 import SeeMyWork from './components/SeeMyWork';
@@ -13,6 +13,11 @@ export default function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   }
+
+  useEffect(() => {
+    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setDarkMode(prefersDarkMode);
+  }, []);
 
   return (
     <div className={`App ${darkMode ? 'dark' : ''}`}>
