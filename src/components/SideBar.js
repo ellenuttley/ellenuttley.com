@@ -3,7 +3,6 @@ import { GiSunglasses, GiLightBulb, GiLaptop, GiSpellBook, GiMushroomHouse} from
 const SideBar = ({ setView, darkMode, toggleDarkMode }) => {
 
     return (
-        // <div className="sidebar">
         <div className={`sidebar ${darkMode ? 'dark' : ''}`}>
             <SideBarIcon icon={<GiMushroomHouse size="44"/>} text = 'Homepage' handleClick={setView}/>
             <SideBarIcon icon={<GiSunglasses size="44"/>} text = 'About Ellen' handleClick={setView}/>

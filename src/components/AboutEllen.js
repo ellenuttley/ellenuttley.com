@@ -6,14 +6,14 @@ const AboutEllen = () => (
 
 {/* header  */}
   <div class="inline-grid col-span-8 grid-cols-2">
-  <div class="gridbox order-1 mb-2 pt-1 text-lg lg:text-3xl border-0 font-normal">Ellen Uttley</div>
-  <div class="gridbox order-1 mb-2 pt-1 text-lg lg:text-3xl text-right border-0 font-normal">Software Engineer</div></div>
+  <div class="gridbox order-1 mb-2 pt-1 text-lg border-0 font-normal lg:text-3xl dark:shadow-none">Ellen Uttley</div>
+  <div class="gridbox order-1 mb-2 pt-1 text-lg border-0 font-normal lg:text-3xl dark:shadow-none text-right">Software Engineer</div></div>
 
 {/* info */}
-  <div class="gridbox order-2 m-0.5 lg:m-0 border-t-1 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">ellenuttley@gmail.com</div>
-  <div class="gridbox order-2 m-0.5 lg:m-0 border-t-1 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">07815587455</div>
-  <div class="gridbox order-3 m-0.5 lg:m-0 border-t-1 lg:order-2 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">Barnsley, UK</div>
-  <div class="gridbox order-3 m-0.5 lg:m-0 border-t-1 lg:order-2 col-span-4 lg:col-span-2 text-center bg-lightPurple text-md lg:text-lg font-light lg:border-b-0">github.com/ellenuttley</div>
+  <div class="gridbox order-2 m-0.5 lg:m-0 border-t-1 col-span-4 lg:col-span-2 text-center dark:bg-transparent dark:shadow-sm dark:shadow-primary bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">ellenuttley@gmail.com</div>
+  <div class="gridbox order-2 m-0.5 lg:m-0 border-t-1 col-span-4 lg:col-span-2 text-center dark:bg-transparent dark:shadow-sm dark:shadow-primary bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">07815587455</div>
+  <div class="gridbox order-3 m-0.5 lg:m-0 border-t-1 lg:order-2 col-span-4 lg:col-span-2 dark:bg-transparent dark:shadow-sm dark:shadow-primary text-center bg-lightPurple text-md lg:text-lg font-light lg:border-r-0 lg:border-b-0">Barnsley, UK</div>
+  <div class="gridbox order-3 m-0.5 lg:m-0 border-t-1 lg:order-2 col-span-4 lg:col-span-2 dark:bg-transparent dark:shadow-sm dark:shadow-primary text-center bg-lightPurple text-md lg:text-lg font-light lg:border-b-0">github.com/ellenuttley</div>
 
 {/* personal statement */}
   <div class="gridbox order-4 lg:order-3 col-span-8 lg:border-b-0 p-4 ">I am an enthusiastic junior software engineer, excited to get started in the real world.
@@ -22,8 +22,8 @@ This year I completed the CFGDegree Software Engineering bootcamp, elevating my 
 While my passion and talent lies primarily in backend development, I have an eye for UX and design, and an excellent ability to match front ends to those designs. I enjoy utilising my writing background to make my code dry and readable.</div>
 
 {/* skills */}
-  <div class="gridbox order-5 lg:order-4 col-span-8 lg:col-span-6 bg-lightPurple text-lg font-normal lg:border-b-0 lg:border-r-0">Technical Skills</div>
-  <div class="gridbox order-11 lg:order-4 col-span-8 lg:col-span-2 bg-lightPurple text-lg font-normal lg:border-b-0">Non-Technical Skills</div>
+  <div class="gridbox-title order-5 lg:order-4 col-span-8 lg:col-span-6 lg:border-b-0 lg:border-r-0">Technical Skills</div>
+  <div class="gridbox-title order-11 lg:order-4 col-span-8 lg:col-span-2 lg:border-b-0">Non-Technical Skills</div>
 
 {/* python */}
   <div class="gridbox order-6 lg:order-5 col-span-2 lg:col-span-1 lg:border-b-0"><p class="font-light">Python</p><i>Flask Django</i></div>
@@ -46,7 +46,7 @@ While my passion and talent lies primarily in backend development, I have an eye
 
 {/* qualifications (inline) */}
   <div class="inline-grid order-12 col-span-8 lg:order-8 lg:grid-rows-3 lg:col-span-2 lg:row-span-2">
-  <div class="gridbox col-span-2 bg-lightPurple font-normal text-lg lg:border-b-0">Qualifications</div>
+  <div class="gridbox-title col-span-2 lg:border-b-0">Qualifications</div>
   <div class="gridbox col-span-2 row-span-2 lg:border-b-0">CFG Introduction to Data and SQL<br/>CFG Degree Software Engineering<br/>CFG +Masters App Development<br/></div></div>
 
 {/* ...technical skills. other */}
@@ -54,7 +54,7 @@ While my passion and talent lies primarily in backend development, I have an eye
   <div class="gridbox order-10 lg:order-9 col-span-6 lg:col-span-5 lg:border-r-0 lg:border-l-0 lg:border-b-0">HTML and CSS, Bootstrap, Excel, Linux, Tableau</div>
   
 {/* projects */}
-  <div class="gridbox order-12 lg:order-10 col-span-8 bg-lightPurple text-lg font-normal lg:border-b-0">Projects</div>
+  <div class="gridbox-title order-12 lg:order-10 col-span-8 lg:border-b-0">Projects</div>
 
   <div class="gridbox order-12 col-span-8 lg:col-span-2 lg:border-b-0"><p class="font-light">BedtimeBard</p><i>CFG Degree Final Project</i></div>
   <div class="gridbox order-12 col-span-8 border-t-0 lg:border-t lg:col-span-6 lg:border-b-0 lg:border-l-0">An MVC webapp that utilised the OpenAI API to write bedtime stories for children, while integrating their bedtime routines in a to-do list style. Made using Flask, written primarily in Python, with a HTML and CSS frontend, and database functionality using SQLAlchemy</div>
@@ -65,7 +65,7 @@ While my passion and talent lies primarily in backend development, I have an eye
   <div class="gridbox order-12 col-span-8 lg:border-b-0">During both projects I acted as SCRUM master for my respective teams; planning out the project, assigning tasks and tracking progress via KANBAN boards, as well as managing the codebase via GitHub and reviewing my teammates code before it was merged via pull requests. I also designed the UX and database of both apps, and wrote the documentation. </div>
 
 {/* work history (inline>*/}
-  <div class="gridbox order-12 col-span-8 bg-lightPurple font-normal text-lg lg:border-b-0">Work History</div>
+  <div class="gridbox-title order-12 col-span-8 lg:border-b-0">Work History</div>
 
   <div class="inline-grid order-12 col-span-8 grid-cols-5 lg:grid-rows-3 lg:grid-cols-10">
 
@@ -84,7 +84,7 @@ While my passion and talent lies primarily in backend development, I have an eye
   <div class="gridbox col-span-3 lg:border-b-0 lg:border-l-0"><p class="font-light">Morrison’s Supermarket</p>Bakery Assistant<br/>Checkout Operative</div>
   <div class="gridbox col-span-2 lg:border-b-0 lg:border-l-0 text-xs lg:text-base"><i>Jun. 2007 - Sep. 2011</i></div></div>
 
-  <div class="gridbox order-last col-span-8 font-light text-base"><i>References available upon request</i></div>
+  <div class="gridbox order-last col-span-8 font-light text-base dark:shadow-none"><i>References available upon request</i></div>
 
 </div><p><br/></p></div>
 

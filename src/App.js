@@ -15,13 +15,13 @@ export default function App() {
   }
 
   return (
-    // <div className="flex bg-glasses bg-blend-darken bg-fixed bg-primary h-screen scrolling-auto overflow-auto">
-    //   <SideBar setView={setView}/>
-    <div className={`flex bg-glasses bg-blend-darken bg-fixed bg-primary h-screen scrolling-auto overflow-auto ${darkMode ? 'dark' : ''}`}>
+    <div className={`App ${darkMode ? 'dark' : ''}`}>
+    <div className="mainscreen">
     <SideBar setView={setView} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       {view === 'About Ellen' && <AboutEllen />}
       {view === 'See My Work' && <SeeMyWork />}
       {view === 'Read A Story' && <ReadAStory />}
+    </div>
     </div>
   );
 }

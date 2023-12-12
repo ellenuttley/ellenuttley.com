@@ -13,13 +13,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'glasses': "url('/src/images/glasses_background.svg')"
+        'glasses': "url('/src/images/glasses_background.svg')",
       },
        colors: {
         primary: '#E1ACDB',
         secondary: '#280003',
         darkPrimary: '#350444',
-        darkSecondary: '#280003',
         mywhite: '#fefafa',
         lightPurple: '#F9E5FF',
         lightGrey: '#EDECED'
