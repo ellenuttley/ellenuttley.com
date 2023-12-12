@@ -1,5 +1,15 @@
 import React from 'react';
 
+function SubmitButton() {
+  return (
+    <div className="form_submit">
+      <button className="mybutton" type="submit">
+        Submit
+      </button>
+    </div>
+  );
+}
+
 function InputStoryInfo({
     label,
     name,
@@ -19,26 +29,27 @@ function InputStoryInfo({
           type={type}
           placeholder={placeholder}
           aria-label={label}
-          className={`peer story-input ${disabled ? "story-input-disabled" : ""}`}
+          className={`peer story-input`}
           disabled={disabled}
         />
-        <label
+        {/* <label
           htmlFor={name}
           className="story-label"
         >
           {label}
-        </label>
+        </label> */}
       </div>
     );
   }
 
 const ReadAStory = () => {
     return (
-        <div className="flex flex-col w-full p-5 sm:p-10 gap-8 rounded-md">
-          <InputStoryInfo name="name" label="What is your name?" type="text" />
-          <InputStoryInfo name="address" label="Address" />
-          <InputStoryInfo name="password" label="Password" type="password" />
-          <InputStoryInfo name="disabled" label="disabled" disabled />
+        <div className="form_input">
+          <InputStoryInfo name="name" placeholder="What is your name?" type="text" />
+          <InputStoryInfo name="age" placeholder="How old are you?" type="number"/>
+          <InputStoryInfo name="password" placeholder="Password" type="password" />
+          <InputStoryInfo name="not disabled" placeholder="not disabled"/>
+          <SubmitButton/>
         </div>
       );
     };

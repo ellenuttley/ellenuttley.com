@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PlayTicTacToe = () => (
-    <div className="main-header">
+    <div className="mybox">
         <header>Play TicTacToe</header>
     </div>
 );

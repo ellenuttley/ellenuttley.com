@@ -11,71 +11,86 @@
 @layer components {
 
     .sidebar {
-        @apply fixed flex border-solid border-2 rounded-md shadow-lg z-10 top-1 right-1 left-1 justify-evenly w-auto pt-2 pb-2
-        lg:top-2/4 lg:left-7 lg:right-auto lg:bottom-auto lg:min-w-fit lg:flex-col lg:gap-5 lg:p-3 lg:mx-auto lg:pt-5 lg:pb-5 lg:transform lg:-translate-y-2/4
-        bg-mywhite border-secondary shadow-secondary dark:bg-darkPrimary dark:border-darkSecondary;
+        @apply fixed flex border-solid border-2 rounded-md shadow-md z-10 top-1 right-1 left-1 justify-evenly w-auto pt-2 pb-2 
+        bg-mywhite border-secondary shadow-secondary
+
+        lg:top-2/4 lg:left-7 lg:right-auto lg:bottom-auto lg:min-w-fit lg:flex-col lg:gap-5 lg:p-3 lg:mx-auto lg:pt-5 lg:pb-5 
+        lg:transform lg:-translate-y-2/4
+        
+        dark:bg-darkPrimary dark:border-darkSecondary dark:shadow-darkSecondary;
       }
       
 
     .sidebar-icon {
         @apply box-border relative flex items-center justify-center min-w-max z-10 p-2 h-max w-max
-        border-mywhite border rounded-xl border-solid text-secondary 
+        border-mywhite border rounded-xl border-solid text-secondary
+
         hover:border-secondary hover:shadow-darkPrimary hover:rounded-lg hover:shadow-md 
         transition-all duration-200 ease-linear cursor-pointer
-        lg:m-1;
+
+        lg:m-1
+        
+        dark:text-lightPurple dark:border-darkPrimary dark:hover:border-lightPurple dark:hover:shadow-lightPurple;
     }
 
     .sidebar-tooltip {
-        @apply absolute w-auto p-2 m-2 min-w-max rounded-md shadow-md z-10
+        @apply absolute w-auto p-2 m-2 min-w-max rounded-md shadow-md z-10 origin-bottom-right top-14
         font-['Spectral'] text-secondary bg-lightPurple
         transition-all duration-100 scale-0 
         
-        origin-bottom-right top-14
-        lg:origin-left lg:left-14 lg:top-auto
-        ;
+        lg:origin-left lg:left-14 lg:top-auto;
     }
 
     .mygrid {
-        @apply grid relative container bg-mywhite
-        w-fit -z-0 shadow-md shadow-secondary rounded-md
-        mt-24 ml-1 mr-1 p-3
+        @apply grid relative container bg-mywhite shadow-md shadow-secondary rounded-md 
+        mt-24 ml-1 mr-1 p-3 w-fit -z-0
         
-        lg:ml-36 lg:transform lg:-translate-y-1 lg:mt-7 lg:p-5
-        ;
+        lg:ml-44 lg:transform lg:-translate-y-1 lg:mt-7 lg:p-5;
     }
 
     .gridbox {
         @apply relative bg-mywhite z-0 border-lightGrey border border-l-0 border-r-0 transform transition-all
-        font-['Spectral'] text-sm font-extralight text-left p-2 m-1
+        font-['Spectral'] text-sm font-extralight text-left p-2 m-1 
         
-        lg:text-base lg:border lg:border-solid lg:pl-3 lg:p-2 lg:border-secondary lg:m-0
-        ; 
+        lg:text-base lg:border lg:border-solid lg:pl-3 lg:p-2 lg:border-secondary lg:m-0; 
     }
 
     .mybox {
-        @apply gridbox bg-mywhite rounded-md shadow-sm shadow-secondary mb-10
-        mt-auto mx-auto border border-secondary h-auto
-        font-['Spectral'] pl-3 font-extralight text-left p-2;
+        @apply relative flex container m-auto h-auto w-auto p-2
+        border border-secondary bg-mywhite rounded-md shadow-sm shadow-secondary font-extralight 
+        ;
     }
 
     .myswiper {
         @apply fixed left-48 mt-2 p-5 h-full pb-44 top-5 container bg-mywhite 
         w-screen ml-48 -z-0 shadow-md shadow-secondary rounded-md;
     }
+
+    .form_input {
+        @apply relative flex flex-col w-screen gap-3 rounded-md shadow-md mt-24 ml-1 mr-1 p-3 -z-0
+        ;
+    }
     
     .input-story-info {
-        @apply relative ml-40 flex flex-col-reverse w-full;
-      }
+        @apply relative flex flex-col-reverse w-auto
+       lg:ml-44;
+    }
     
-      .story-input {
-        @apply w-full pb-1 pt-6 px-3 text-base rounded-lg border border-gray-400 focus:border-red-400 text-gray-600 bg-white focus:outline-none focus:ring-0 appearance-none transition-colors duration-300;
-      }
+    .story-input {
+        @apply p-3 text-base font-extralight rounded-lg border border-secondary bg-mywhite appearance-none 
+        focus:shadow-darkPrimary focus:shadow-md focus:outline-none focus:ring-0 focus:text-secondary transition-all duration-300;
+    }
     
-      .story-input-disabled {
-        @apply bg-gray-200;
-      }
+    .story-label {
+        @apply absolute top-0 items-center px-3 pt-2  bg-transparent 
+        ;
+    } 
+
+    .mybutton {
+        @apply bg-lightPurple  text-mywhite font-bold py-2 px-4 rounded
+        lg:ml-44
+    }
+
+
     
-      .story-label {
-        @apply absolute top-0 items-center px-3 pt-2 text-xs peer-focus:font-semibold peer-focus:text-red-400 uppercase text-gray-600 bg-transparent transition-colors duration-300;
-      }
 }
