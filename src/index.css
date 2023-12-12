@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-    div {
-      @apply font-['Spectral'];
+    div { @apply 
+      font-['Spectral']
+      text-secondary
+      border-secondary
+
+      dark:text-lightPurple;
     }
   }
 
@@ -18,7 +22,7 @@
 
     .sidebar {
         @apply fixed flex border-solid border-2 rounded-md shadow-md z-10 top-1 right-1 left-1 justify-evenly w-auto pt-2 pb-2 
-        bg-mywhite border-secondary shadow-secondary
+        bg-mywhite shadow-secondary
 
         lg:top-2/4 lg:left-7 lg:right-auto lg:bottom-auto lg:min-w-fit lg:flex-col lg:gap-5 lg:p-3 lg:mx-auto lg:pt-5 lg:pb-5 
         lg:transform lg:-translate-y-2/4
@@ -29,24 +33,24 @@
 
     .sidebar-icon {
         @apply box-border relative flex items-center justify-center min-w-max z-10 p-2 h-max w-max
-        border-mywhite border rounded-xl border-solid text-secondary
+        border-mywhite border rounded-xl border-solid
 
         hover:border-secondary hover:shadow-darkPrimary hover:rounded-lg hover:shadow-md 
         transition-all duration-200 ease-linear cursor-pointer
 
         lg:m-1
         
-        dark:text-lightPurple dark:border-darkPrimary dark:hover:border-lightPurple dark:hover:shadow-lightPurple;
+        dark:border-darkPrimary dark:hover:border-lightPurple dark:hover:shadow-lightPurple;
     }
 
     .sidebar-tooltip {
         @apply absolute w-auto p-2 m-2 min-w-max rounded-md shadow-md z-10 origin-bottom-right top-14
-        text-secondary bg-lightPurple
+        bg-lightPurple
         transition-all duration-100 scale-0 
         
         lg:origin-left lg:left-14 lg:top-auto
         
-        dark:text-lightPurple dark:border-secondary dark:bg-darkPrimary dark:shadow-lightPurple dark:shadow-sm dark:font-light;
+        dark:border-secondary dark:bg-darkPrimary dark:shadow-lightPurple dark:shadow-sm dark:font-light;
     }
 
     .mygrid {
@@ -55,7 +59,7 @@
         
         lg:ml-44 lg:transform lg:-translate-y-1 lg:mt-7 lg:p-5
         
-      dark:text-lightPurple dark:border-secondary dark:bg-secondary dark:shadow-primary dark:bg-opacity-40 dark:gap-1;
+      dark:border-secondary dark:bg-secondary dark:shadow-primary dark:bg-opacity-40 dark:gap-1;
     }
 
     .gridbox {
@@ -64,7 +68,7 @@
         
         lg:text-base lg:border lg:border-solid lg:pl-3 lg:p-2 lg:border-secondary lg:m-0
         
-        dark:text-lightPurple dark:shadow-primary dark:border-none 
+         dark:shadow-lightPurple dark:border-none 
         ; 
     }
 
@@ -77,18 +81,18 @@
     .gridbox-info {
         @apply m-0.5 col-span-4 text-center text-sm font-light bg-lightPurple
         lg:col-span-2 lg:m-0 lg:text-lg lg:border-b-0
-        dark:bg-transparent dark:shadow-sm dark:shadow-primary
+        dark:bg-transparent dark:shadow-sm dark:shadow-lightPurple
     }
 
     .gridbox-title {
         @apply
         text-lg font-normal bg-lightPurple
-        dark:shadow-sm dark:shadow-primary dark:bg-darkPrimary dark:bg-opacity-60;
+        dark:shadow-sm dark:shadow-lightPurple dark:bg-darkPrimary dark:bg-opacity-60;
     }
 
     .mybox {
         @apply relative flex container m-auto h-auto w-auto p-2
-        border border-secondary bg-mywhite rounded-md shadow-sm shadow-secondary font-extralight 
+        border bg-mywhite rounded-md shadow-sm shadow-secondary font-extralight 
         ;
     }
 
@@ -108,7 +112,7 @@
     }
     
     .story-input {
-        @apply p-3 text-base font-extralight rounded-lg border border-secondary bg-mywhite appearance-none 
+        @apply p-3 text-base font-extralight rounded-lg border bg-mywhite appearance-none 
         focus:shadow-darkPrimary focus:shadow-md focus:outline-none focus:ring-0 focus:text-secondary transition-all duration-300;
     }
     
