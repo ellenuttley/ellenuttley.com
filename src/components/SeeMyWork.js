@@ -1,12 +1,8 @@
-import { htmlContent } from '../html/merlinTickets.html'
-
-// Import Swiper styles
-import 'swiper/css/bundle';
+import React from 'react';
+// import 'swiper/css/bundle'; // Import Swiper styles
 
 const SeeMyWork = () => (
-    <div >
-    <div dangerouslySetInnerHTML={{__html: htmlContent}} />;
-    </div>
+<header>See My Work</header>
   );
 
 export default SeeMyWork;
