@@ -2,12 +2,11 @@ const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    mode: 'jit',
+    // mode: 'jit',
     purge: [
       './src/**/*.{js,jsx,ts,tsx}', // Add paths to your components here
   ],
     content: [
-      "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
     "./node_modules/tw-elements-react/dist/js/**/*.js"
   ],

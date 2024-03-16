@@ -1,4 +1,5 @@
 import React from 'react';
+import { TETooltip } from "tw-elements-react";
 import petitdoneLogo from '../../images/petitdoneLogo.png';
 import petitdoneAx from '../../images/petitdoneAx.png';
 
@@ -7,8 +8,22 @@ const PetItDone = () => {
     <div className="swiperslide font-irene">
   
   <div className='inline-flex justify-center bg-[#B0E3EE] p-3 rounded-xl w-full shadow-bardBlack shadow-sm lg:p-6'>
-    <img className=" h-14 lg:h-32 w-auto" src={petitdoneAx} alt="Pet It Done Axolotl" />
-    <img className=" h-14 lg:h-32 w-auto" src={petitdoneLogo} alt="Pet It Done Logo" />
+    
+
+    <span>
+      <TETooltip
+          tag="a"
+          title={<><p className='font-irene bg-bardBlack text-mywhite p-2 px-3 rounded-xl shadow-bardBlack shadow-sm'>Click me to view the GitHub!</p></>}
+          placement="bottom"
+          wrapperProps={{ href:'https://github.com/ellenuttley/pet-it-done' }}
+          className="transition duration-150 ease-in-out pointer-events-auto cursor-pointer font-irene"
+        >
+         <img className="h-12 md:h-32 w-auto flex-shrink" src={petitdoneAx} alt="Pet It Done Axolotl" />
+          
+        </TETooltip>
+        </span>
+
+    <img className="h-12 md:h-32 w-auto flex-shrink" src={petitdoneLogo} alt="Pet It Done Logo" />
   </div>
   
 

@@ -11,7 +11,7 @@ const BedtimeBard = () => {
       <span>
       <TETooltip
           tag="a"
-          title={<><p className='font-solway shadow-bardBlack shadow-sm'>Click me to view the GitHub!</p></>}
+          title={<><p className='font-solway bg-bardBlack text-mywhite p-2 px-3 rounded-xl shadow-bardBlack shadow-sm'>Click me to view the GitHub!</p></>}
           placement="bottom"
           wrapperProps={{ href:'https://github.com/ellenuttley/bedtime-bard' }}
           className="transition duration-150 ease-in-out pointer-events-auto cursor-pointer font-solway"
