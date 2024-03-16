@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Irene Florentina';
+    src: url('./fonts/IreneFlorentina-Regular.woff2') format('woff2'),
+        url('./fonts/IreneFlorentina-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
 @layer base {
     div { @apply 
       font-['Spectral']
@@ -15,7 +24,7 @@
 @layer components {
 
     .mainscreen {
-        @apply flex bg-glasses bg-blend-darken bg-primary h-screen scroll-auto overflow-auto
+        @apply flex bg-glasses bg-blend-darken bg-primary h-screen w-screen overflow-auto
 
         dark:bg-darkPrimary dark:bg-blend-multiply
     }
@@ -92,14 +101,10 @@
 
     .mybox {
         @apply relative flex container m-auto h-auto w-auto p-2
-        border bg-mywhite rounded-md shadow-sm shadow-secondary font-extralight 
+         bg-mywhite rounded-md shadow-sm shadow-secondary  
         ;
     }
 
-    .myswiper {
-        @apply fixed left-48 mt-2 p-5 h-full pb-44 top-5 container bg-mywhite 
-        w-screen ml-48 -z-0 shadow-md shadow-secondary rounded-md;
-    }
 
     .form_input {
         @apply relative flex flex-col w-screen gap-3 rounded-md shadow-md mt-24 ml-1 mr-1 p-3 -z-0
@@ -123,7 +128,38 @@
 
     .mybutton {
         @apply bg-lightPurple  text-mywhite font-bold py-2 px-4 rounded
-        lg:ml-44
+        lg:ml-44;
+    }
+
+    .swiperwrapper {
+        @apply fixed container h-auto px-2 pb-2 w-auto top-24 right-2 left-2 bottom-2 bg-mywhite -z-0 shadow-md shadow-secondary rounded-md
+       
+        
+        lg:left-40 md:transform md:-translate-y-1 lg:top-7 md:bottom-5 md:right-7
+        
+        dark:border-secondary dark:bg-secondary dark:shadow-primary dark:bg-opacity-40 dark:gap-1;
+       }  
+
+    .myswiper {
+        @apply fixed block h-full bg-mywhite rounded-md px-2 ;
+       }
+       
+    .swiperslide {
+        @apply overflow-y-auto mx-3 px-2 max-h-full rounded-md my-2 py-7 mb-7 pb-10  flex flex-col justify-start justify-items-center items-center text-center 
+        
+        lg:mx-12 lg:px-7
+        ;
+    }
+
+    .slideTitle {
+        @apply self-center text-xl text-bardBlack p-3 pt-4
+        lg:text-7xl lg:p-8;
+    }
+
+    .slideBody {
+        @apply leading-normal p-5 mt-3 text-base bg-mywhite text-bardBlack
+        lg:text-xl
+        ;
     }
 
 

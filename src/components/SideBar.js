@@ -1,5 +1,5 @@
-import { GiSunglasses, GiLightBulb, GiLaptop, GiSpellBook, GiMushroomHouse} from 'react-icons/gi'
-
+import { GiSunglasses, GiLightBulb, GiLaptop,  GiMushroomHouse} from 'react-icons/gi'
+// GiSpellBook,
 const SideBar = ({ setView, darkMode, toggleDarkMode }) => {
 
     return (
@@ -7,7 +7,7 @@ const SideBar = ({ setView, darkMode, toggleDarkMode }) => {
             <SideBarIcon icon={<GiMushroomHouse size="44"/>} text = 'Homepage' handleClick={setView}/>
             <SideBarIcon icon={<GiSunglasses size="44"/>} text = 'About Ellen' handleClick={setView}/>
             <SideBarIcon icon={<GiLaptop size="44"/>} text = 'See My Work' handleClick={setView}/>
-            <SideBarIcon icon={<GiSpellBook size="44"/>} text = 'Read A Story' handleClick={setView}/>
+            {/* <SideBarIcon icon={<GiSpellBook size="44"/>} text = 'Read A Story' handleClick={setView}/> */}
             <SideBarIcon icon={<GiLightBulb size="44"/>} text = 'Dark Mode' handleClick={toggleDarkMode}/>
         </div>
     );

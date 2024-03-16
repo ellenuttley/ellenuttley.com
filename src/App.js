@@ -6,6 +6,7 @@ import ReadAStory from './components/ReadAStory';
 
 require('typeface-spectral')
 
+
 export default function App() {   
   const [view, setView] = useState('AboutEllen')
   const [darkMode, setDarkMode] = useState(false);
