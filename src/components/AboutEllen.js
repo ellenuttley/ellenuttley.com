@@ -19,7 +19,7 @@ const AboutEllen = () => (
   <div className="gridbox gridbox-info order-3 border-t-1 lg:order-2">github.com/ellenuttley</div>
 
 {/* Personal Statement */}
-<div className="gridbox space-y-2 order-4 lg:order-3 col-span-8 lg:border-b-0 p-4 px-6 font-light leading-snug">
+<div className="gridbox space-y-2 order-4 lg:order-3 col-span-8 lg:border-b-0 p-4 px-6 font-light leading-snug ">
 <p>I am an enthusiastic junior software developer, in search of a company that fosters learning and professional development.</p> 
 <p>My passion for full-stack development grows by the day, and I have found that I have an eye for UX/UI design, and love being able to look at a project through the lens of both a developer and a designer. I try to use this dual perspective to fuel creative innovation and problem solving, and I strive to create simple, but impactful designs that satisfy and simplify the user story.</p>
 <p>I completed the CFGDegree Software Engineering bootcamp, elevating my skills in Python and SQL and honing those skills through projects. As one of the top performers, I was then offered a place on the +Masters bootcamp for App Development, where I learnt how to make React Native mobile apps, and achieved the highest grade in my cohort of 97%.</p>

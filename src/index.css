@@ -64,7 +64,7 @@
 
     .mygrid {
         @apply grid relative bg-mywhite shadow-md shadow-secondary rounded-md 
-        mt-24 p-3 w-auto -z-0 mx-2 text-balance
+        mt-24 p-3 w-auto -z-0 mx-2 text-pretty
         
         lg:ml-60 lg:transform lg:-translate-y-1 lg:mt-7 lg:p-6 lg:px-8 lg:mr-48
         
