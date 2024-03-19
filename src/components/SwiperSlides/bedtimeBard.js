@@ -6,17 +6,17 @@ const BedtimeBard = () => {
  return (
     <div className="swiperslide font-solway">
   
-    <div className='inline-flex justify-center bg-[#BBAFD3] dark:bg-darkPrimary p-3 rounded-xl w-full shadow-bardBlack shadow-sm lg:p-6  dark:border-secondary dark:shadow-primary dark:bg-opacity-70 dark:text-mywhite'>
+    <div className='inline-flex justify-center bg-[#BBAFD3] dark:bg-transparent p-3 rounded-xl w-full shadow-bardBlack shadow-sm lg:p-6  dark:shadow-none dark:bg-opacity-70 dark:text-mywhite'>
       
       <span>
       <TETooltip
           tag="a"
-          title={<p className='font-solway h-full bg-bardBlack text-mywhite p-2 px-3 rounded-xl shadow-bardBlack shadow-sm'>Click me to view the GitHub!</p>}
+          title={<p className='font-solway py-2 text-mywhite'>Click me to view the GitHub!</p>}
           placement="bottom"
           wrapperProps={{ href:'https://github.com/ellenuttley/bedtime-bard' }}
-          className="transition duration-150 ease-in-out pointer-events-auto cursor-pointer font-solway "
-        >
-         <img className="h-auto w-auto flex-shrink justify-normal self-center" src={bardLogo}  alt="Bedtime Bard Logo" />
+          className="transition duration-150 ease-in-out pointer-events-auto cursor-pointer font-solway 
+">
+         <img className="h-auto w-auto justify-normal self-center" src={bardLogo}  alt="Bedtime Bard Logo" />
           
         </TETooltip>
         </span>

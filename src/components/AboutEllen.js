@@ -5,9 +5,9 @@ const AboutEllen = () => (
   <div className="mygrid grid-cols-8 text-center *:subpixel-antialiased text ">
 
 {/* Header */}
-  <div className="inline-grid col-span-8 grid-cols-4 order-first">
-    <div className="gridbox-header col-span-2 text-left ">Ellen Uttley</div>
-    <div className="gridbox-header col-span-2 text-right">Software Engineer</div>
+  <div className="inline-grid col-span-8 grid-cols-10 order-first">
+    <div className="gridbox-header col-span-4 text-left ">Ellen Uttley</div>
+    <div className="gridbox-header col-span-6 text-right">Software Engineer</div>
   </div>
 
 {/* Info */}

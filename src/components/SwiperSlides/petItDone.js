@@ -1,6 +1,6 @@
 import React from 'react';
 import { TETooltip } from "tw-elements-react";
-import petitdoneLogo from '../../images/petitdoneLogo.png';
+// import petitdoneLogo from '../../images/petitdoneLogo.png';
 import petitdoneAx from '../../images/petitdoneAx.png';
 
 const PetItDone = () => {
@@ -13,7 +13,7 @@ const PetItDone = () => {
     <span>
       <TETooltip
           tag="a"
-          title={<><p className='font-irene bg-bardBlack text-mywhite p-2 px-3 rounded-xl shadow-bardBlack shadow-sm'>Click me to view the GitHub!</p></>}
+          title={<><p className='font-irene py-2 text-mywhite'>Click me to view the GitHub!</p></>}
           placement="bottom"
           wrapperProps={{ href:'https://github.com/ellenuttley/pet-it-done' }}
           className="transition duration-150 ease-in-out pointer-events-auto cursor-pointer font-irene"
@@ -23,7 +23,7 @@ const PetItDone = () => {
         </TETooltip>
         </span>
 
-    <img className="h-12 md:h-32 w-auto dark:rounded-full dark:bg-gradient-to-b dark:from-transparent  dark:via-lightPurple/40 flex-shrink" src={petitdoneLogo} alt="Pet It Done Logo" />
+      <h1 className="slideTitle self-center font-irene">PetItDone</h1> 
   </div>
   
 
