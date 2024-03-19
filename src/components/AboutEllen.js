@@ -2,21 +2,21 @@ import React from 'react';
 
 const AboutEllen = () => (
   <div>
-  <div className="mygrid grid-cols-8 text-center *:subpixel-antialiased ">
+  <div className="mygrid grid-cols-8 text-center *:subpixel-antialiased text ">
 
 {/* Header */}
-  <div className="inline-grid col-span-8 grid-cols-2">
-  <div className="gridbox-header text-left ">Ellen Uttley</div>
-  <div className="gridbox-header text-right">Software Engineer</div></div>
-
-{/* Info */}
-  <div className="gridbox gridbox-info order-2">
-    ellenuttley@gmail.com
+  <div className="inline-grid col-span-8 grid-cols-4 order-first">
+    <div className="gridbox-header col-span-2 text-left ">Ellen Uttley</div>
+    <div className="gridbox-header col-span-2 text-right">Software Engineer</div>
   </div>
 
-  <div className="gridbox gridbox-info order-2">07815587455</div>
-  <div className="gridbox gridbox-info order-3 lg:order-2">Barnsley, UK</div>
-  <div className="gridbox gridbox-info order-3 lg:order-2">github.com/ellenuttley</div>
+{/* Info */}
+  <div className="inline-grid col-span-8 grid-cols-4 overflow-x-auto max-md:flex max-md:flex-nowrap">
+    <div className="gridbox gridbox-info col-span-1 order-1 lg:order-1">Barnsley, UK</div>
+    <div className="gridbox gridbox-info col-span-1 order-2">ellenuttley@gmail.com</div>
+    <div className="gridbox gridbox-info col-span-1 order-3 lg:order-1">www.ellenuttley.com</div>
+    <div className="gridbox gridbox-info col-span-1 order-4 lg:order-1">github.com/ellenuttley</div>
+  </div>
 
 {/* Personal Statement */}
 <div className="gridbox space-y-2 order-4 lg:order-3 col-span-8 p-4 leading-snug text-pretty">
@@ -205,7 +205,7 @@ const AboutEllen = () => (
     <p className="lg:text-right font-light">Anglian Home Improvements</p>
   </div>
   <div className="gridbox order-1 max-md:pb-0 col-span-10 lg:col-span-5 ">
-    <p className="lg:text-left max-md:text-base">Remote Sales Advisor</p>
+    <p className="lg:text-left">Remote Sales Advisor</p>
   </div>
   <div className="gridbox order-1 max-md:pt-0 col-span-10 lg:col-span-2">
     <p className="lg:text-left">Feb. 2022 - Nov. 2022</p>
@@ -215,7 +215,7 @@ const AboutEllen = () => (
     <p className="lg:text-right font-light">Freelancer</p>
   </div>
   <div className="gridbox order-2 max-md:pb-0 col-span-10 lg:col-span-5">
-    <p className="lg:text-left max-md:text-base">Various Roles</p>
+    <p className="lg:text-left">Various Roles</p>
   </div>
   <div className="gridbox order-2 max-md:pt-0 col-span-10 lg:col-span-2">
     <p className="lg:text-left">Aug. 2017 - Dec 2021</p>
@@ -225,7 +225,7 @@ const AboutEllen = () => (
     <p className="lg:text-right font-light">Webhelp, Vodafone</p>
   </div>
   <div className="gridbox order-3 max-md:pb-0 col-span-10 lg:col-span-5">
-    <p className="lg:text-left max-md:text-base">Sales Advisor | Senior Sales Advisor</p>
+    <p className="lg:text-left">Sales Advisor | Senior Sales Advisor</p>
   </div>
   <div className="gridbox order-3 max-md:pt-0 col-span-10 lg:col-span-2">
     <p className="lg:text-left">Jul. 2013 - Dec 2015</p>
@@ -245,7 +245,7 @@ const AboutEllen = () => (
     <p className="lg:text-right font-light">Morrison's Supermarket</p>
   </div>
   <div className="gridbox order-5 max-md:pb-0 col-span-10 lg:col-span-5">
-    <p className="lg:text-left max-md:text-base">Bakery Assistant | Checkout Operative</p>
+    <p className="lg:text-left">Bakery Assistant | Checkout Operative</p>
   </div>
   <div className="gridbox order-5 max-md:pt-0 col-span-10 lg:col-span-2">
     <p className="lg:text-left">Jun. 2007 - Sep. 2011</p>
