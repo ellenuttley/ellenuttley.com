@@ -24,7 +24,7 @@ export default function App() {
     <div className={`App ${darkMode ? 'dark' : ''}`}>
     <div className="mainscreen">
     <SideBar setView={setView} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-      {view === 'About Ellen' && <AboutEllen />}
+      {view === 'Read My CV' && <AboutEllen />}
       {view === 'See My Work' && <SeeMyWork />}
       {view === 'Read A Story' && <ReadAStory />}
     </div>
