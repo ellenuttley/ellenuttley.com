@@ -12,6 +12,10 @@ const Homepage = () => (
             No, I don't really look like that
         </div>
 
+        <div className="gridbox gridbox-info order-2 col-span-1 h-fit bg-mywhite border-primary shadow-darkPrimary shadow-sm text-center">
+            ... I'm just good with AI 
+        </div>
+
         <div className=" gridbox gridbox-info order-3 col-span-1 h-fit bg-mywhite border-primary shadow-darkPrimary shadow-sm text-center">
         Press Some Buttons
         </div>
