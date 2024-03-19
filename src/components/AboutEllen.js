@@ -27,7 +27,7 @@ const AboutEllen = () => (
 </div>
 
 {/* Technical Skills */}
-<div class="inline-grid grid-cols-4 col-span-8 order-6 lg:order-5 lg:col-span-4 row-span-6 *:max-md:px-1 *:max-md:my-0">
+<div class="inline-grid grid-cols-4 col-span-8 order-6 lg:order-5 lg:col-span-4 row-span-6 *:max-md:px-1 *:max-md:my-0 *:max-md:text-sm">
 
 <div className="gridbox gridbox-title order-first col-span-8 lg:col-span-4">
   Technical Skills
@@ -35,7 +35,7 @@ const AboutEllen = () => (
 
 {/* Python */}
   <div className="gridbox min-w-fit order-1 col-span-1">
-    <p className="font-normal text-right">Python</p></div>
+    <p className="font-normal text-right ">Python</p></div>
     
   <div className="gridbox text-left order-1 lg:col-span-3 col-span-7 border-lightGrey border-l">
     Flask, Django, OOP, APIs, testing, file handling
