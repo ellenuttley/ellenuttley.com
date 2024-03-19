@@ -23,7 +23,7 @@ module.exports = {
         secondary: '#280003',
         darkPrimary: '#350444',
         mywhite: '#fefafa',
-        lightPurple: '#F9E5FF',
+        lightPurple: '#F2ECFF',
         lightGrey: '#EDECED',
         bardBlack: '#392B41'
       }
