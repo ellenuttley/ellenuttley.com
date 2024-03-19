@@ -27,44 +27,45 @@ const AboutEllen = () => (
 </div>
 
 {/* Technical Skills */}
-<div class="inline-grid grid-cols-4 col-span-8 order-6 lg:order-5 lg:col-span-4 row-span-6">
+<div class="inline-grid grid-cols-4 col-span-8 order-6 lg:order-5 lg:col-span-4 row-span-6 *:max-md:px-1 *:max-md:my-0">
 
 <div className="gridbox gridbox-title order-first col-span-8 lg:col-span-4">
   Technical Skills
 </div>
 
 {/* Python */}
-  <div className="gridbox order-1 col-span-1 border-lightGrey border-r">
+  <div className="gridbox min-w-fit order-1 col-span-1">
     <p className="font-normal text-right">Python</p></div>
-  <div className="gridbox text-left order-1 lg:col-span-3 col-span-7">
+    
+  <div className="gridbox text-left order-1 lg:col-span-3 col-span-7 border-lightGrey border-l">
     Flask, Django, OOP, APIs, testing, file handling
   </div>
 
 {/* SQL */}
-  <div className="gridbox order-2 col-span-1 lg:row-span-2 border-lightGrey border-r">
+  <div className="gridbox min-w-fit order-2 col-span-1 lg:row-span-2">
     <p className="font-normal text-right">SQL</p>
   </div>
   
-  <div className="gridbox text-left order-2 col-span-7 lg:col-span-3 lg:row-span-2">
+  <div className="gridbox text-left order-2 col-span-7 lg:col-span-3 lg:row-span-2  border-lightGrey border-l">
     Relational database design and management<br/>
     MySQL, PostgreSQL, SQLAlchemy, ORM
   </div>
 
 {/* Javascript */}
-  <div className="gridbox order-3 col-span-1 border-lightGrey border-r">
+  <div className="gridbox min-w-fit order-3 col-span-1">
     <p className="font-normal text-right">JavaScript</p>
   </div>
 
-  <div className="gridbox text-left order-3 col-span-7 lg:col-span-3">
+  <div className="gridbox text-left order-3 col-span-7 lg:col-span-3 border-lightGrey border-l">
     React, React Native, node.js
   </div>
   
 {/* Tailwind */}
-  <div className="gridbox order-4 col-span-1 font-light border-lightGrey border-r">
+  <div className="gridbox min-w-fit order-4 col-span-1 font-light">
     <p className="font-normal text-right">Tailwind</p>
   </div>
 
-  <div className="gridbox text-left pr-0 order-4 col-span-7 lg:col-span-3">
+  <div className="gridbox text-left pr-0 order-4 col-span-7 lg:col-span-3 border-lightGrey border-l">
     Dark mode, accessibility, responsive development
   </div>
 
