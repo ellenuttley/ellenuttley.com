@@ -7,7 +7,7 @@ const PetItDone = () => {
  return (
     <div className="swiperslide font-irene">
   
-  <div className='inline-flex justify-center bg-[#B0E3EE] p-3 rounded-xl w-full shadow-bardBlack shadow-sm lg:p-6'>
+  <div className='inline-flex justify-center bg-[#B0E3EE] dark:bg-transparent  p-3 rounded-xl w-full shadow-bardBlack shadow-sm lg:p-6 dark:shadow-none'>
     
 
     <span>
@@ -23,11 +23,11 @@ const PetItDone = () => {
         </TETooltip>
         </span>
 
-    <img className="h-12 md:h-32 w-auto flex-shrink" src={petitdoneLogo} alt="Pet It Done Logo" />
+    <img className="h-12 md:h-32 w-auto dark:rounded-full dark:bg-gradient-to-b dark:from-transparent  dark:via-lightPurple/40 flex-shrink" src={petitdoneLogo} alt="Pet It Done Logo" />
   </div>
   
 
-      <p className="slideBody">PetItDone is a React Native app that combines a digipet and to-do list. Designed by neurodivergent people, with neurodivergent people in mind, in hopes that the urgency of the digipet getting sad, will give a boost in motivation for people who struggle to get their tasks done.</p>
+      <p className="slideBody dark:bg-transparent">PetItDone is a React Native app that combines a digipet and to-do list. Designed by neurodivergent people, with neurodivergent people in mind, in hopes that the urgency of the digipet getting sad, will give a boost in motivation for people who struggle to get their tasks done.</p>
       
       <p className="slideBody mb-6 bg-[#FFCAD4] p-6 rounded-xl shadow-bardBlack shadow-sm">To learn more about PetItDone, feel free to click through the presentation below!</p>
 
