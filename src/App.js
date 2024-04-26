@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import SideBar from "./components/SideBar";
+import Footer from "./components/Footer";
 import AboutEllen from "./components/AboutEllen";
 import SeeMyWork from './components/SeeMyWork';
 import ReadAStory from './components/ReadAStory';
+import MyDesign from './components/MyDesign';
 import Homepage from './components/Homepage';
+
 
 require('typeface-spectral')
 
@@ -29,6 +32,8 @@ export default function App() {
       {view === 'Read My CV' && <AboutEllen />}
       {view === 'See My Work' && <SeeMyWork />}
       {view === 'Read A Story' && <ReadAStory />}
+      {view === 'My Design' && <MyDesign />}
+      <Footer/>
     </div>
     </div>
   );
