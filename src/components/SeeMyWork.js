@@ -23,7 +23,7 @@ const SeeMyWork = () => (
       bulletActiveClass: "bg-green-400"}}
     scrollbar={{ draggable: true }}
     breakpointsBase={window}
-    updateOnWindowResize={true}
+    // updateOnWindowResize={true}
     loop={true}
   >
     <SwiperSlide><BedtimeBard/></SwiperSlide>
