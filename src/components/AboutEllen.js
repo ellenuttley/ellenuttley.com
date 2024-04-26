@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutEllen = () => (
   <div>
-  <div className="mygrid grid-cols-8 text-center *:subpixel-antialiased text ">
+  <div className="mygrid grid-cols-8 text-center *:subpixel-antialiased font-spectral ">
 
 {/* Header */}
   <div className="inline-grid col-span-8 grid-cols-10 order-first">
