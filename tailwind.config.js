@@ -1,4 +1,3 @@
-const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -15,18 +14,25 @@ module.exports = {
         'solway': ['Solway', 'serif'],
         'bungee': ['Bungee', 'cursive'],
         'irene': ['Irene Florentina', 'sans-serif'],
+        'calistoga': ['Calistoga', 'sans-serif'],
+        'lexend': ['Lexend', 'sans-serif'],
+        'spectral': ['Spectral', 'sans-serif'],
       },
       backgroundImage: {
         'glasses': "url('/src/images/glasses_background.svg')",
       },
        colors: {
         primary: '#E1ACDB',
-        secondary: '#280003',
+        primaryPurple: '#61087F',
+        // secondary: '#280003',
+        secondary: '#1B0C2C',
+        transition: '#CACBCC',
         darkPrimary: '#350444',
         mywhite: '#fefafa',
+        myblack: '#1B0C2C',
         lightPurple: '#F2ECFF',
         lightGrey: '#EDECED',
-        bardBlack: '#392B41'
+        bardBlack: '#392B41',
       }
       
     },
@@ -41,7 +47,8 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require("tw-elements-react/dist/plugin.cjs")
+    require("tw-elements-react/dist/plugin.cjs"),
+    require('tailwindcss/colors')
   ]
 }
 
