@@ -30,14 +30,14 @@ const BedtimeBard = () => {
 
       <div className="relative w-full h-auto rounded-xl shadow-bardBlack shadow-sm "
         style={{ paddingTop: '56.2500%', paddingBottom: '0', marginTop: '0.9em', marginBottom: '0.9em', overflow: 'hidden', willChange: 'transform'}}>
-        <iframe loading="lazy" style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', padding: '0', margin: '0'}} src="https://www.canva.com/design/DAFjlSIcLYA/view?embed" allowFullScreen allow="fullscreen" title="Bedtime Bard Presentation"></iframe>
+        <iframe loading="lazy" style={{position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', padding: '0', margin: '0'}} src="https://www.canva.com/design/DAFjlSIcLYA/view?embed" allowFullScreen sandbox title="Bedtime Bard Presentation"></iframe>
       </div>
 
       <p className="slideBody mb-6 bg-[#E7B1F6] font-solway p-6 rounded-xl shadow-bardBlack shadow-sm">Click the image below to view the wireframes and user story</p>
 
       <a href="https://www.canva.com/design/DAFiqI0neAQ/RlNIIqjLNbFkPRyxAojOdQ/view?utm_content=DAFiqI0neAQ&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="#" rel="noopener" className="relative block w-full h-auto rounded-xl shadow-bardBlack shadow-sm"
     style={{ paddingTop: '56.2500%', paddingBottom: '0', marginTop: '0.9em', marginBottom: '0.9em', overflow: 'hidden', willChange: 'transform', position: 'relative' }}>
-    <iframe loading="lazy" style={{ position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', padding: '0', margin: '0' }} src="https://www.canva.com/design/DAFiqI0neAQ/RlNIIqjLNbFkPRyxAojOdQ/view?embed" allowFullScreen allow="fullscreen" title="BedtimeBard Wireframes"></iframe>
+    <iframe loading="lazy" style={{ position: 'absolute', width: '100%', height: '100%', top: '0', left: '0', border: 'none', padding: '0', margin: '0' }} src="https://www.canva.com/design/DAFiqI0neAQ/RlNIIqjLNbFkPRyxAojOdQ/view?embed" allowFullScreen sandbox title="BedtimeBard Wireframes"></iframe>
     </a>
 
 
