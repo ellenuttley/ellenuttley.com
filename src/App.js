@@ -30,9 +30,9 @@ export default function App() {
     <SideBar setView={setView} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       {view === 'Homepage' && <Homepage />}
       {view === 'Read My CV' && <AboutEllen />}
-      {view === 'See My Work' && <SeeMyWork />}
+      {view === 'My Projects' && <SeeMyWork />}
       {view === 'Read A Story' && <ReadAStory />}
-      {view === 'My Design' && <MyDesign />}
+      {view === 'My React Components' && <MyDesign />}
       <Footer/>
     </div>
     </div>

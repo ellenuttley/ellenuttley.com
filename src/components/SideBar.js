@@ -6,9 +6,9 @@ const SideBar = ({ setView, darkMode, toggleDarkMode }) => {
         <div className={`sidebar ${darkMode ? 'dark' : ''}`}>
             <SideBarIcon icon={<GiMushroomHouse size="44"/>} text = 'Homepage' handleClick={setView}/>
             <SideBarIcon icon={<GiSunglasses size="44"/>} text = 'Read My CV' handleClick={setView}/>
-            <SideBarIcon icon={<GiLaptop size="44"/>} text = 'See My Work' handleClick={setView}/>
-            <SideBarIcon icon={<GiPalette size="44"/>} text = 'My Design' handleClick={setView}/>
-            <SideBarIcon icon={<GiLightBulb size="44"/>} text = 'Dark Mode' handleClick={toggleDarkMode}/>
+            <SideBarIcon icon={<GiLaptop size="44"/>} text = 'My Projects' handleClick={setView}/>
+            <SideBarIcon icon={<GiPalette size="44"/>} text = 'My React Components' handleClick={setView}/>
+            <SideBarIcon icon={<GiLightBulb size="44"/>} text = 'Toggle Dark Mode' handleClick={toggleDarkMode}/>
         </div>
     );
 
