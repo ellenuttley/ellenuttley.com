@@ -42,10 +42,11 @@ const Homepage = () => {
 							className="rounded-md shadow-secondary  shadow-sm size-full object-top object-cover dark:opacity-30 hover:dark:opacity-70 dark:shadow-sm dark:shadow-primary/50   "
 							src={portrait}
 							alt="Portrait of Ellen"
+							loading="lazy"
 						/>
 					</div>
 					<div className="  p-2 xl:p-5 xl:px-6  xl:rounded-md xl:row-span-full xl:col-span-3 xl:row-start-6 xl:m-1  col-start-5 xl:col-start-1  z-20 row-start-1 row-end-4 max-xl:col-end-13  xl:pt-3 size-full lg:dark:shadow-sm lg:dark:shadow-primary/30 lg:dark:bg-darkPrimary lg:dark:bg-opacity-60 ">
-						<div className="homepageBox max-xl:size-full  overflow-auto xl:-translate-y-5    ">
+						<div className="homepageBox max-xl:size-fit  overflow-auto xl:-translate-y-5    ">
 							<h2 className="md:mb-3 xl:text-4xl ">Hi, I'm Ellen</h2>
 							<div className="">
 								{" "}
