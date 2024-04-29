@@ -14,12 +14,14 @@ module.exports = {
         'solway': ['Solway', 'serif'],
         'bungee': ['Bungee', 'cursive'],
         'irene': ['Irene Florentina', 'sans-serif'],
-        'calistoga': ['Calistoga', 'sans-serif'],
+        'calistoga': ['Calistoga', 'serif'],
         'lexend': ['Lexend', 'sans-serif'],
-        'spectral': ['Spectral', 'sans-serif'],
+        'spectral': ['Spectral', 'serif'],
+        'bitter': ['Bitter', 'serif'],
       },
       backgroundImage: {
         'glasses': "url('/src/images/glasses_background.svg')",
+        'windows': "url('/src/images/windowsbg.jpg')",
       },
        colors: {
         primary: '#E1ACDB',
