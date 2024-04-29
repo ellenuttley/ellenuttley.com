@@ -18,14 +18,14 @@ const AppContent = () => {
     <img
       className="object-center object-contain max-xl:hidden size-full"
       src={phoneFrameSide}
-      alt="Image of a phone"
+      alt="Horizontal mobile phone frame"
       loading="lazy"
     />
 
 <img
       className="object-center object-contain xl:hidden size-full"
       src={phoneFrame}
-      alt="Image of a phone"
+      alt="Vertical mobile phone frame"
       loading="lazy"
     />
  </div>
