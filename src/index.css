@@ -24,6 +24,7 @@
 		@apply font-calistoga text-secondary max-sm:text-xl text-2xl leading-loose transition-transform md:text-3xl lg:text-4xl xl:text-5xl
 		dark:text-lightPurple;
 	}
+	
 }
 
 @layer components {
@@ -101,6 +102,14 @@
 
 	.listbox {
 		@apply border-lightGrey/30 shadow-secondary/20 rounded-lg border-e border-s  p-2 shadow-xl;
+	}
+
+	.pagebox {
+		@apply border-[#5A6675]/5 bg-transparent  rounded-b-md border-e border-s  p-2 shadow-xl shadow-[#5A6675]/20  dark:shadow-primary/20 dark:shadow-lg dark:hover:shadow-primary/50 hover:shadow-[#5A6675]/40;
+	}
+
+	.grassGradient {
+		@apply bg-gradient-to-t from-transparent via-[#43b95e] via-100% to-0% ;
 	}
 
 	.titlebox {
@@ -260,6 +269,14 @@
 	.appbox {
 		@apply font-solway bg-mywhite/95 rounded-3xl border-4 border-[#8EB21D] outline outline-[#587C1C]/30 p-3 py-5 shadow-[#03484F] shadow-xl ;
 	}
+
+	.designButton {
+		@apply rounded-md ;
+	}
+
+	.metalbox {
+		@apply bg-inherit;
+	}
 }
 
 .blackHeader {
@@ -272,6 +289,12 @@
 	color: theme("colors.mywhite");
 	text-shadow: -0.5px 0 theme("colors.myblack"), 0 0.5px theme("colors.myblack"),
 		0.5px 0 theme("colors.myblack"), 0 -0.5px theme("colors.myblack");
+}
+
+.innerText {
+	--tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+	--tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .embossed {
