@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import portrait from "../images/ellen.png";
-import { WebContent } from "./WebBlock";
-import { SoftwareContent } from "./SoftwareBlock";
-import { AppContent } from "./AppBlock";
-import { DesignContent } from "./DesignBlock";
+import { WebContent } from "./HomepageCarousel/WebBlock";
+import { SoftwareContent } from "./HomepageCarousel/SoftwareBlock";
+import { AppContent } from "./HomepageCarousel/AppBlock";
+import { DesignContent } from "./HomepageCarousel/DesignBlock";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 const Homepage = () => {
@@ -45,14 +45,14 @@ const Homepage = () => {
 							loading="lazy"
 						/>
 					</div>
-					<div className="  p-2 xl:p-5 xl:px-6  xl:rounded-md xl:row-span-full xl:col-span-3 xl:row-start-6 xl:m-1  col-start-5 xl:col-start-1  z-20 row-start-1 row-end-4 max-xl:col-end-13  xl:pt-3 size-full lg:dark:shadow-sm lg:dark:shadow-primary/30 lg:dark:bg-darkPrimary lg:dark:bg-opacity-60 ">
-						<div className="homepageBox max-xl:size-fit  overflow-auto xl:-translate-y-5    ">
+					<div className="  p-2 xl:p-5 xl:px-6  xl:rounded-md xl:row-span-full xl:col-span-3 xl:row-start-6 xl:m-1  col-start-5 xl:col-start-1  z-20 row-start-1 row-end-4 max-xl:col-end-13  xl:pt-3 size-full  ">
+						<div className="homepageBox max-xl:size-fit  overflow-auto xl:-translate-y-5  ">
 							<h2 className="md:mb-3 xl:text-4xl ">Hi, I'm Ellen</h2>
 							<div className="">
 								{" "}
-								bio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-								do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								Lectus nulla at volutpat diam ut. viverra aliquet.
+								A Software Developer and Designer based in Barnsley,
+								England. I have a passion for backend development, and a flare
+								for frontend and design.
 							</div>
 						</div>
 					</div>
@@ -61,26 +61,28 @@ const Homepage = () => {
 				</h2> */}
 					<div className=" xl:col-start-4 row-start-4 xl:row-start-1 size-full col-end-13 col-span-full row-span-full  ">
 						<div className="flex size-full justify-between ">
-						<div className="homepageButton w-fit max-h-full my-10 " onClick={handlePrevious}>
-							<FiArrowLeft className="h-full" />
-						</div>
-						{/* <div className="rounded-md flex-grow mx-1">
+							<div
+								className="homepageButton w-fit max-h-full my-10 "
+								onClick={handlePrevious}>
+								<FiArrowLeft className="h-full" />
+							</div>
+							{/* <div className="rounded-md flex-grow mx-1">
       {carouselData[currentIndex].title}
     </div> */}
 
-
-					<div className=" size-full mx-1 xl:mx-2 rounded-md ">
-						<div className="size-full rounded-md  ">
-							{carouselData[currentIndex].content} 
+							<div className=" size-full mx-1 xl:mx-2 rounded-md ">
+								<div className="size-full rounded-md  ">
+									{carouselData[currentIndex].content}
+								</div>
+							</div>
+							<div
+								className="homepageButton w-fit max-h-full my-10"
+								onClick={handleNext}>
+								<FiArrowRight className="h-full " />
+							</div>
 						</div>
-					</div>
-					<div className="homepageButton w-fit max-h-full my-10" onClick={handleNext}>
-						<FiArrowRight className="h-full " />
 					</div>
 				</div>
-				
-						</div>
-					</div>
 			</div>
 		</div>
 	);
