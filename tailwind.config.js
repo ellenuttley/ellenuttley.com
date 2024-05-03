@@ -18,10 +18,13 @@ module.exports = {
         'lexend': ['Lexend', 'sans-serif'],
         'spectral': ['Spectral', 'serif'],
         'bitter': ['Bitter', 'serif'],
+        'walter': ['Walter Turncoat', 'cursive'],
       },
       backgroundImage: {
         'glasses': "url('/src/images/glasses_background.svg')",
         'windows': "url('/src/images/windowsbg.jpg')",
+        'landscape': "url('/src/images/padLandscape.png')",
+        'portrait': "url('/src/images/padPortrait.png')",
       },
        colors: {
         primary: '#E1ACDB',
