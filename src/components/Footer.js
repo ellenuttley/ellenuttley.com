@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="group fixed dark:bg-secondary  dark:text-lightPurple dark:shadow-lightPurple dark:border-primary dark:border bottom-1 left-5 right-5 z-10 flex h-fit w-auto translate-y-[90%] transform flex-row justify-evenly rounded-md bg-mywhite pb-2 pt-2 font-lexend text-secondary shadow-sm shadow-secondary transition-transform duration-300 hover:translate-y-0  ;">
+    <footer className="group fixed dark:bg-secondary  dark:text-lightPurple dark:shadow-lightPurple dark:border-primary dark:border bottom-1 left-5 right-5 z-50 flex h-fit w-auto translate-y-[90%] transform flex-row justify-evenly rounded-md bg-mywhite pb-2 pt-2 font-lexend text-secondary shadow-sm shadow-secondary transition-transform duration-300 hover:translate-y-0  ;">
       <a
         href="https://github.com/ellenuttley/aboutme"
         target="_blank"
