@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import PauseButton from "./PauseButton"
 import { WebContent } from "./HomepageCarousel/WebBlock"
 import { SoftwareContent } from "./HomepageCarousel/SoftwareBlock"
 import { AppContent } from "./HomepageCarousel/AppBlock"
@@ -65,19 +66,13 @@ const Homepage = () => {
 						onClick={() => setCurrentIndex(index)}
 						className={`homepageButton ${
 							currentIndex === index
-								? "bg-primaryPurple shadow-inner shadow-secondary whiteHeader"
+								? "bg-primaryPurple shadow-inner blackHeader shadow-secondary whiteHeader"
 								: ""
 						}`}>
 						{item.buttonText}
 					</button>
 				))}
-				<button
-					onClick={togglePause}
-					className={` homepageButton ${
-						isPaused ? "bg-secondary shadow-inner shadow-secondary whiteHeader" : "bg-gray-800 text-white"
-					}`}>
-					{isPaused ? "Play" : "Pause"}
-				</button>
+				<PauseButton isPaused={isPaused} onClick={togglePause} />
 			</div>
 		</div>
 	)
