@@ -24,10 +24,14 @@
 		@apply font-calistoga text-secondary max-sm:text-xl text-2xl leading-loose transition-transform md:text-3xl lg:text-4xl xl:text-5xl
 		dark:text-lightPurple;
 	}
-	
 }
 
 @layer components {
+
+	.button {
+		@apply whiteHeader border-secondary bg-mywhite font-calistoga shadow-secondary hover:shadow-secondary m-1 size-fit rounded-lg border px-3 py-1 text-center text-lg tracking-wide shadow-sm hover:shadow-md md:text-xl md:hover:skew-y-1;
+	  }
+
 	.box {
 		@apply w-full h-fit  bg-mywhite shadow-secondary  m-auto rounded-md p-2 md:p-4 text-left shadow-sm xl:p-5
 	 dark:bg-secondary dark:shadow-primary dark:bg-opacity-40;
@@ -57,9 +61,7 @@
 	}
 
 	.outerHomeLg {
-		@apply relative  p-2  m-6 ml-8
-		
-;
+		@apply absolute right-20 left-10 ;
 	}
 
 	.innerHomeLg {
@@ -68,28 +70,38 @@
 
 	/* -------- */
 	.outerHomeSm {
-		@apply relative p-0.5  m-1 mt-24
-;
+		@apply absolute -translate-y-1 top-24 bottom-16 left-1 right-1 
+		;
 	}
 
 	.innerHomeSm {
-		@apply static size-full p-3 max-sm:p-2 max-sm:py-3
-		 ;
+		@apply static size-full   ;
 	}
 	/* -------- */
 
 	.homepageBox {
-		@apply container w-full h-fit  bg-mywhite shadow-secondary m-auto rounded-md   p-2 md:p-4 text-left shadow-sm xl:p-5
+		@apply container bg-mywhite shadow-secondary rounded-md  m-auto p-2 md:p-4 text-left shadow-sm xl:p-5
 		dark:shadow-sm dark:shadow-primary/30 dark:bg-darkPrimary dark:bg-opacity-85;
 	}
 
-	.homepageButton {
-		@apply container mx-auto m-auto rounded-xl p-1
-		max-sm:text-lg text-xl md:text-2xl lg:text-3xl  
-		hover:bg-mywhite hover:shadow-secondary hover:shadow-md hover:ring-primary/80 hover:ring-4
+	.homepageButton { 
+		@apply container text-left mx-auto w-full rounded-xl p-1 xl:p-2 xl:px-3 m-1 
+		max-sm:text-sm text-xl md:text-2xl lg:text-3xl  
+	bg-mywhite shadow-secondary/50 shadow-sm
+	hover:shadow-secondary/70 hover:bg-primary hover:cursor-pointer
 		dark:hover:bg-darkPrimary dark:hover:shadow-primary/30 dark:hover:shadow-sm
 		active:shadow-secondary/70 active:shadow-inner  
-		dark:active:shadow-inner dark:active:shadow-primary/50 ;
+		dark:active:shadow-inner dark:active:shadow-primary/50;
+	}
+
+	.buttonLeft
+	{
+		@apply border border-darkPrimary/60 border-l-2 border-l-darkPrimary/60 hover:border-darkPrimary hover:border-r-darkPrimary/60  active:border-l-0 border-r-0 rounded-r-lg active:rounded-l-lg active:border-r-2 active:border-r-darkPrimary/80 ;
+	}
+
+	.buttonRight
+	{
+		@apply border border-darkPrimary/60 border-r-2 border-r-darkPrimary/60 hover:border-darkPrimary hover:border-l-darkPrimary/60 active:border-r-0 border-l-0 rounded-l-lg active:rounded-r-lg active:border-l-2 active:border-l-darkPrimary/80;
 	}
 
 	.clearPage {
@@ -109,7 +121,7 @@
 	}
 
 	.grassGradient {
-		@apply bg-gradient-to-t from-transparent via-[#43b95e] via-100% to-0% ;
+		@apply bg-gradient-to-t from-transparent via-[#43b95e] via-100% to-0%;
 	}
 
 	.titlebox {
@@ -117,22 +129,21 @@
 	}
 
 	.mainscreen {
-		@apply flex bg-glasses bg-blend-darken bg-primary h-screen w-screen overflow-auto 
+		@apply flex bg-glasses bg-primary bg-blend-lighten h-screen w-screen overflow-auto 
 
         dark:bg-darkPrimary dark:bg-blend-multiply;
 	}
 
 	.sidebar {
-		@apply fixed flex border-solid border-primary border-2 rounded-md shadow-sm z-50 top-1 right-1 left-1 justify-evenly w-auto pt-2 pb-2 
-        bg-mywhite shadow-secondary transform transition-transform duration-300 
+		@apply fixed flex border-solid border-darkPrimary border-2 rounded-md shadow-md z-50 top-1 right-1 left-1 justify-evenly w-auto pt-2 pb-2 
+        bg-mywhite shadow-secondary transform transition-transform duration-300  
 
      xl:bottom-auto xl:left-2 xl:right-auto xl:top-2/4 xl:mx-auto xl:min-w-fit xl:-translate-x-[90%] xl:-translate-y-2/4 xl:transform 
         xl:flex-col xl:gap-5
-
 		xl:p-3
         
         xl:pb-5 xl:pt-5 xl:hover:translate-x-0
-        dark:bg-secondary dark:border-primary dark:shadow-primary/50 ;
+        dark:bg-secondary dark:border-primary dark:shadow-primary/50;
 	}
 
 	.sidebar-icon {
@@ -144,8 +155,7 @@
 
         xl:m-1
         active:shadow-inner active:shadow-secondary dark:active:shadow-primary/50
-        dark:border-secondary dark:hover:border-primary/50  dark:hover:shadow-primary/50 
-		;
+        dark:border-secondary dark:hover:border-primary/50  dark:hover:shadow-primary/50;
 	}
 
 	.sidebar-tooltip {
@@ -267,15 +277,23 @@
 	}
 
 	.appbox {
-		@apply font-solway bg-mywhite/95 rounded-3xl border-4 border-[#8EB21D] outline outline-[#587C1C]/30 p-3 py-5 shadow-[#03484F] shadow-xl ;
+		@apply font-solway bg-mywhite/95 rounded-3xl border-4 border-[#8EB21D] outline outline-[#587C1C]/30 p-3 py-5 shadow-[#03484F] shadow-xl;
 	}
 
 	.designButton {
-		@apply rounded-md ;
+		@apply rounded-md;
 	}
 
 	.metalbox {
 		@apply bg-inherit;
+	}
+
+	.genericDark {
+		@apply dark:shadow-lightPurple/50 dark:shadow-sm dark:bg-darkPrimary/70 dark:hover:shadow-sm dark:hover:shadow-lightPurple dark:text-lightPurple;
+	}
+
+	.thickBorder {
+		@apply bg-darkPrimary  lg:border-x-8 lg:border-y-4 border-x-4 border-y-2 rounded-2xl lg:rounded-xl border-darkPrimary shadow-sm shadow-secondary dark:bg-secondary dark:shadow-primary/50 dark:bg-opacity-80 dark:border-myblack dark:shadow-lg;
 	}
 }
 
@@ -294,7 +312,8 @@
 .innerText {
 	--tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
 	--tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .embossed {
