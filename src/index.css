@@ -28,10 +28,6 @@
 
 @layer components {
 
-	.button {
-		@apply whiteHeader border-secondary bg-mywhite font-calistoga shadow-secondary hover:shadow-secondary m-1 size-fit rounded-lg border px-3 py-1 text-center text-lg tracking-wide shadow-sm hover:shadow-md md:text-xl md:hover:skew-y-1;
-	  }
-
 	.box {
 		@apply w-full h-fit  bg-mywhite shadow-secondary  m-auto rounded-md p-2 md:p-4 text-left shadow-sm xl:p-5
 	 dark:bg-secondary dark:shadow-primary dark:bg-opacity-40;
@@ -84,11 +80,20 @@
 		dark:shadow-sm dark:shadow-primary/30 dark:bg-darkPrimary dark:bg-opacity-85;
 	}
 
+	.button {
+		@apply blackHeader border-solid border-darkPrimary bg-mywhite
+		shadow-secondary shadow-md
+		m-1 size-fit rounded-md border-2 px-3 py-1 text-center text-lg tracking-wide 
+		md:text-xl md:hover:skew-y-1
+		hover:shadow-secondary
+		;
+	  }
+
 	.homepageButton { 
-		@apply container text-left mx-auto w-full rounded-xl p-1 xl:p-2 xl:px-3 m-1 
+		@apply container button text-left mx-auto w-full rounded-xl p-1 xl:p-2 xl:px-3 m-1 
 		max-sm:text-sm text-xl md:text-2xl lg:text-3xl  
-	bg-mywhite shadow-secondary/50 shadow-sm
-	hover:shadow-secondary/70 hover:bg-primary hover:cursor-pointer
+	 shadow-secondary/50 shadow-sm
+	hover:shadow-secondary/70 
 		dark:hover:bg-darkPrimary dark:hover:shadow-primary/30 dark:hover:shadow-sm
 		active:shadow-secondary/70 active:shadow-inner  
 		dark:active:shadow-inner dark:active:shadow-primary/50;
