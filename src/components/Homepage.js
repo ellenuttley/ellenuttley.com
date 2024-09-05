@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { WebContent } from "./HomepageCarousel/WebBlock"
 import { SoftwareContent } from "./HomepageCarousel/SoftwareBlock"
 import { AppContent } from "./HomepageCarousel/AppBlock"
@@ -16,6 +16,14 @@ const Homepage = () => {
 		{ content: <WebContent />, buttonText: "Websites" },
 	]
 
+	useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
+        }, 5000); // Changes slide every 5 seconds
+
+        return () => clearInterval(interval); // Cleanup on component unmount
+    }, []);
+
 	const handlePrevious = () => {
 		setCurrentIndex(
 			(prevIndex) => (prevIndex - 1 + carouselData.length) % carouselData.length
@@ -28,7 +36,7 @@ const Homepage = () => {
 
 	return (
 		<div className="flex justify-center items-center m-auto max-h-dvh max-xl:pr-1 ">
-			<div className="sticky container mx-auto w-[50dvw] h-[75dvh] xl:m-10 m-2">
+			<div className="sticky container mx-auto w-[80dvw] max-xl:w-[50dvw] h-[50dvh] max-xl:h-[75dvh] xl:m-10 m-2">
 				<div className="w-full h-full flex items-center justify-center overflow-hidden">
 					{carouselData[currentIndex].content}
 				</div>
