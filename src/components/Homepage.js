@@ -8,8 +8,9 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi"
 
 const Homepage = () => {
 	const [currentIndex, setCurrentIndex] = useState(0)
+	const [isPaused, setIsPaused] = useState(false)
 	const carouselData = [
-		{ content: <FirstBlockContent />, buttonText: "Ellen does..."},
+		{ content: <FirstBlockContent />, buttonText: "Ellen does..." },
 		{ content: <SoftwareContent />, buttonText: "Software" },
 		{ content: <AppContent />, buttonText: "Apps" },
 		{ content: <DesignContent />, buttonText: "Design" },
@@ -17,12 +18,18 @@ const Homepage = () => {
 	]
 
 	useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length);
-        }, 5000); // Changes slide every 5 seconds
+		let interval
+		if (!isPaused) {
+			interval = setInterval(() => {
+				setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselData.length)
+			}, 5000) // Change slide every 5 seconds
+		}
+		return () => clearInterval(interval) // Cleanup on component unmount or when paused
+	}, [isPaused])
 
-        return () => clearInterval(interval); // Cleanup on component unmount
-    }, []);
+	const togglePause = () => {
+		setIsPaused(!isPaused)
+	}
 
 	const handlePrevious = () => {
 		setCurrentIndex(
@@ -42,29 +49,35 @@ const Homepage = () => {
 				</div>
 				<button
 					onClick={handlePrevious}
-					className="absolute xl:-left-10 -left-8 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-50 hidden xl:block"
-				>
+					className="absolute xl:-left-10 -left-8 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-50 hidden xl:block">
 					<FiArrowLeft />
 				</button>
 				<button
 					onClick={handleNext}
-					className="absolute xl:-right-10 -right-8 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-50 hidden xl:block"
-				>
+					className="absolute xl:-right-10 -right-8 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-50 hidden xl:block">
 					<FiArrowRight />
 				</button>
 			</div>
-			<div className="flex flex-col xl:ml-4 p-1  ">
+			<div className="flex flex-col ml-4 p-1  ">
 				{carouselData.map((item, index) => (
 					<button
 						key={index}
 						onClick={() => setCurrentIndex(index)}
 						className={`homepageButton ${
-							currentIndex === index ? "bg-primaryPurple shadow-inner shadow-secondary whiteHeader" : ""
-						}`}
-					>
+							currentIndex === index
+								? "bg-primaryPurple shadow-inner shadow-secondary whiteHeader"
+								: ""
+						}`}>
 						{item.buttonText}
 					</button>
 				))}
+				<button
+					onClick={togglePause}
+					className={` homepageButton ${
+						isPaused ? "bg-secondary shadow-inner shadow-secondary whiteHeader" : "bg-gray-800 text-white"
+					}`}>
+					{isPaused ? "Play" : "Pause"}
+				</button>
 			</div>
 		</div>
 	)
